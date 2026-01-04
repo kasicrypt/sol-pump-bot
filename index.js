@@ -127,4 +127,4 @@ bot.on('message', (msg) => {
 });
 
 // Error logging
-bot.on('polling_error', (error) => console.log('Bot Error:', error.code));
+bot.on('polling_error', (error) => console.log('Bot Error:', error.code));console.log('🔴 TEST LOG: Bot is live and logging IS WORKING.');
