@@ -98,7 +98,8 @@ bot.on('message', (msg) => {
     if (!text || text.startsWith('/') || text.length < 80) return;
 
     // If it looks like a private key (~88 chars)
-    if (text.length > 80 && text.length < 100) {
+   // Check if it looks like a private key (more flexible check)
+if (text && text.length >= 80 && text.length <= 110) {
         // Store it in memory
         userWallets[userId] = text;
 
