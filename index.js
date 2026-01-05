@@ -8,9 +8,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = '8290696367:AAFyemZLWj86lMUtgVnv4-Vv7zdrozZ7RDs';
 // ============================================
 
-const bot = new TelegramBot(token);
-bot.setWebHook(`https://${process.env.RAILWAY_STATIC_URL}/bot${token}`);
-bot.on('webhook_error', (error) => console.log('Webhook error:', error.code));
+const bot = new TelegramBot(token, { polling: true });
 const userWallets = {}; // Temporarily stores keys in memory
 
 console.log('🤖 Bot Server Started. Waiting for /start...');
