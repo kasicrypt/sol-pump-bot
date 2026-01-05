@@ -5,7 +5,7 @@ const TelegramBot = require('node-telegram-bot-api');
 
 // >>>>> CONFIGURATION: PUT YOUR BOT TOKEN HERE <<<<<
 // REPLACE THE TEXT BETWEEN THE QUOTES WITH YOUR TOKEN FROM @BotFather
-const token = '8290696367:AAFyemZLWj86lMUtgVnv4-Vv7zdrozZ7RDs';
+const token = '8290696367:AAG65jt5C6yq0GVRptvjmFQt3SQufesLHmA';
 // ============================================
 
 const bot = new TelegramBot(token, { polling: true });
